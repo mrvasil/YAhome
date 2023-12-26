@@ -1,0 +1,167 @@
+ 
+* {
+    font-family: MS Sans Serif, Geneva, sans-serif;
+}
+
+html {
+    background-color: #120b27;
+    color: rgba(255, 255, 255, 0.785);
+    font-size: 130%;
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    font-size: 80%;
+    border: 0px;
+    border-radius: 3px;
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 3;
+    padding-bottom: 3;
+    cursor: pointer;
+}
+#top-div {
+    position: fixed;
+    top: 4px;
+    background-color: #23174e;
+    border:  0px solid #000;
+    border-radius: 13px;
+    height: 50px;
+    right: 12px;
+    left: 12px;
+    margin: 4;
+    opacity: 97%;
+    /* box-shadow: 0.1em 0.1em 19px rgba(0, 0, 0, 0.24); */
+    box-shadow: 0.27em 0.27em 31px #120b27;
+}
+#body-div {
+    background-color: #2f204a;
+    font-size: 80%;
+    border:  0;
+    border-radius: 13px;
+    margin: 8.6px;
+    box-shadow: 0.01em 0.01em 3px rgba(66, 66, 66, 0.408);
+    margin-top: 33px;
+    min-height: 240 !important;
+    padding: 10px;
+    width: fit-content;
+    min-width: 600px;
+}
+
+#reload_button  {
+    background-color: #00000000;        
+    position: fixed;
+    top: 12px;
+    left: 20px;
+    opacity: 91%;
+    border-radius: 10px;
+}   
+#reload_button:hover {
+    background-color: rgba(73, 0, 137, 0.613);
+}
+
+.tablink {
+    margin-top: 71px;
+    background-color: #28195e;
+    box-shadow: 0.01em 0.01em 13px rgba(18, 18, 18, 0.157);
+    font-size: 80%;
+    color: white;
+    border: 0px;
+    width: 170px;
+    height: 40;
+    border-radius: 10px;
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 3;
+    margin-left: 5;
+    margin-right: 5;
+    padding-bottom: 3;
+}
+
+
+.selected {
+    background-color: #41327f;
+    box-shadow: 0.01em 0.01em 13px rgba(179, 179, 179, 0.408);
+    transition: background-color 2s ease;
+}
+
+.block {
+    height: 170px;
+    width: 141px;
+    margin: 7px;
+    background-color: rgb(49, 34, 104);
+    border:  0px solid #000;
+    border-radius: 13px;
+    box-shadow: 0.1em 0.1em 19px rgba(0, 0, 0, 0.24);
+    display:inline-block;
+    text-align: center;
+}
+
+
+.on_off_button {
+    margin-top: 0px;
+    border-radius: 9px;
+    height: 30px;
+    width: 120px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #00000000;
+}
+  
+.enable_button {
+    border:  2px solid #aa00ff;;
+    box-shadow: 0.01em 0.01em 2px #aa00ff;
+    background-image: url('images/icons8-shutdown-100.png');
+}
+.disable_button {
+    border:  2px solid #a3a3a3;
+    box-shadow: 0.01em 0.01em 2px #a3a3a3;
+    background-image: url('images/icons8-shutdown-disable.png');
+}
+
+.icon {
+    margin-top: 13px;
+    margin-left: 7;      
+    height: 80px;
+}
+
+
+.device_name {
+    font-size: 90%;
+    margin-top: 4px;
+}
+
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+}
+.notification_remove {
+    animation: slideOutRight 1s forwards;
+}
+
+.notification {
+    background-color: rgb(43, 14, 92);
+    box-shadow: 0.01em 0.01em 13px rgba(179, 179, 179, 0.386);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 74%;
+    opacity: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border: none;
+}

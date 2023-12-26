@@ -1,0 +1,25 @@
+<table style="margin: 0 auto;" id="device_table">
+
+    <tr>
+        {% for i in range(length) %}
+                <td>
+                    <div class="block" {% if info['device_info'][i] != "0" %} onclick="open_device_info('{{info['devices'][i]}}_info', this)" style="cursor: pointer;" {% endif %}> 
+                        <img src="interface/images/devices_logo_dark.png" class="icon" height="22">
+                        <p class="device_name"> {{ info['name'][i] }} </p>
+
+                        {% if info['state'][i] == True %}
+                            <button class="enable_button on_off_button" onclick="event.stopPropagation(); button_click(this, '{{info['devices'][i]}}')")"></button>
+                        {% elif info['state'][i] == False %}
+                            <button class="disable_button on_off_button" onclick="event.stopPropagation(); button_click(this, '{{info['devices'][i]}}')"></button>
+                        {% endif %}
+
+                    </div>
+                </td>
+            {% if (i%3 == 0) and (i != 0) %}
+                </tr><tr>
+            {% endif %}
+        
+        {% endfor %}
+    </tr>
+
+</table>
